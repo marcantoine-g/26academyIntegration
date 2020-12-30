@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    height: 65vh;
+    background-image: url('/assets/wpHeader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #0e296d ;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+}
+
+header strong {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header a {
+    background-color: #5c42ff;
+    color: white;
+    text-decoration: none;
+    padding: 20px; 
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+#cards {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    bottom: 50px;
+    background-color: white;
+    color: #0e296d;
+    width: 300px;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: whitesmoke 2px 5px 5px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1150px) {
+    header {
+        height: 35vh;
+    }
+
+    #cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 20px auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    header h1{
+        max-width: 50%;
+        font-size: 1.3rem;
+    }
+    header strong{
+        font-size: 1.5rem;
+    }
+
+    header a {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        width: 200px;
+    }
+    .card h3{
+        font-size: 1rem;
+    }
+    .card a{
+        font-size: 0.8rem;
+    }
+}
